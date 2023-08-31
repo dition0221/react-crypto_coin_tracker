@@ -10,7 +10,7 @@
 
 ![image](https://github.com/dition0221/dition0221/assets/129196812/8c30dc0a-a194-4157-bf74-deb8504e6ac4)
 
-> **React**와 **TypeScript**와 **Styled-Components**를 사용하고, **암호화폐 API**로부터 데이터를 가져와 화면에 보여주는 '**암호화폐 코인 트래커 서비스**'입니다.
+> **React**와 **TypeScript**와 **Styled-Components**를 사용하고, **암호화폐 API**로부터 데이터를 가져와 화면에 보여주는 '**암호화폐 코인 트래커 서비스**'입니다.  
 > 홈에서 100가지의 암호화폐를 Rank 순으로 보여주며, 클릭 시 해당 암호화폐의 상세페이지로 이동합니다.
 >
 > - 일부 UI에 **반응형 디자인**을 적용해 모바일에서도 잘 보이게끔 설정.
@@ -20,9 +20,9 @@
 
 ![image](https://github.com/dition0221/dition0221/assets/129196812/a151f240-6dc1-47b7-9eec-b83fab2f900c)
 
-> [ 상세페이지 ]
-> 해당 코인의 상세 정보를 확인할 수 있습니다.
-> **Nested Routes**를 이용해 시각화한 'Chart'와 'Price' 페이지를 볼 수 있습니다.
+> [ 상세페이지 ]  
+> 해당 코인의 상세 정보를 확인할 수 있습니다.  
+> **Nested Routes**를 이용해 시각화한 'Chart'와 'Price' 페이지를 볼 수 있습니다.  
 > **ApexChart.js**를 사용해 API로부터 가져온 데이터를 시각화 하였습니다.
 >
 > - **React-Query**사용으로 페이지를 되돌아가도 이미 불러온 API를 re-fetch하지 않음.
