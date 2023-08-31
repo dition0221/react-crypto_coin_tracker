@@ -1,8 +1,32 @@
-# React JS - Master Class
+# React - Crypto Coin Tracker
 
-### React를 더욱 심층적으로 구현합니다.
+### React를 사용해 암호화폐 목록과 시세를 보여주는 사이드 프로젝트입니다.
 
 <img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=white"/> <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white"/> <img src="https://img.shields.io/badge/Styled Components-DB7093?style=flat-square&logo=styledcomponents&logoColor=white"/> <img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white"/> <img src="https://img.shields.io/badge/React Router-CA4245?style=flat-square&logo=reactrouter&logoColor=white"/> <img src="https://img.shields.io/badge/React Query-FF4154?style=flat-square&logo=reactquery&logoColor=white"/> <img src="https://img.shields.io/badge/ApexCharts-00e396?style=flat-square"/> <img src="https://img.shields.io/badge/Recoil-3578E5?style=flat-square&logo=recoil&logoColor=white"/>
+
+---
+
+**✨ 결과물 : https://dition0221.github.io/react-crypto_coin_tracker/**
+
+![image](https://github.com/dition0221/dition0221/assets/129196812/8c30dc0a-a194-4157-bf74-deb8504e6ac4)
+
+> **React**와 **TypeScript**와 **Styled-Components**를 사용하고, **암호화폐 API**로부터 데이터를 가져와 화면에 보여주는 '**암호화폐 코인 트래커 서비스**'입니다.
+> 홈에서 100가지의 암호화폐를 Rank 순으로 보여주며, 클릭 시 해당 암호화폐의 상세페이지로 이동합니다.
+>
+> - 일부 UI에 **반응형 디자인**을 적용해 모바일에서도 잘 보이게끔 설정.
+> - 테마 변경 버튼을 이용해 즉각적으로 **다크모드/라이트모드** 설정을 변경 가능.
+> - 우측 하단 Anchor 버튼을 통해 현재 페이지의 최상단으로 이동 가능.
+> - 자동으로 현재 페이지에 알맞는 웹 페이지 Head Title 사용.
+
+![image](https://github.com/dition0221/dition0221/assets/129196812/a151f240-6dc1-47b7-9eec-b83fab2f900c)
+
+> [ 상세페이지 ]
+> 해당 코인의 상세 정보를 확인할 수 있습니다.
+> **Nested Routes**를 이용해 시각화한 'Chart'와 'Price' 페이지를 볼 수 있습니다.
+> **ApexChart.js**를 사용해 API로부터 가져온 데이터를 시각화 하였습니다.
+>
+> - **React-Query**사용으로 페이지를 되돌아가도 이미 불러온 API를 re-fetch하지 않음.
+> - URL 경로가 홈이 아닐 때, 우측 하단에 Home으로 가는 버튼 생성.
 
 ---
 
@@ -181,6 +205,24 @@
       - 'react-helmet' 패키지도 다운 받아야 함
 - **23-08-29 : [Code Challenge] use ApexChart**
 - **23-08-30 : #6.0 ~ #6.4 / Recoil Atom**
+  - Recoil
+    - React에서 사용할 수 있는 상태 관리(state management) 라이브러리
+    - 설치법 : 'npm i recoil'
+    - 설정법 : 'index.tsx'에서 &lt;RecoilRoot&gt;로 앱을 감싸주기
+  - atom : 특정 컴포넌트에 종속되지 않으며, global state를 저장하는 기본 단위
+    - Recoil에서는 state값을 'atom'이라는 버블에 담아서 사용
+    - atom이 변경되면 컴포넌트도 변경된 값으로 re-rendering 됨
+    - 사용법
+      1. 'atom'을 관리하는 파일 생성하기
+         - '/src/atoms.ts'
+      2. 'atom' 생성하기
+         - import { atom } from "recoil";
+         - 기본형 : export const 변수명 = atom({ key: 키값, default: 초기값});
+      3. [Read] 다른 컴포넌트에서 'atom' 연결하기
+         - 기본형 : const 변수명 = useRecoilValue(아톰명);
+      4. [Write] 다른 컴포넌트에서 'atom' 수정하기
+         - 기본형 : const Setter함수 = useRecoilState(아톰명);
+         - 'useState()'처럼 사용하면 됨
 
 ---
 
