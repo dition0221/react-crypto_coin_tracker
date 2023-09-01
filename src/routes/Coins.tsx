@@ -90,6 +90,7 @@ const ThemeBtn = styled.button`
     border-color: ${(props) => props.theme.accentColor};
     box-shadow: 0 0 10px ${(props) => props.theme.accentColor};
     transform: scale(1.2);
+    cursor: pointer;
   }
 `;
 
