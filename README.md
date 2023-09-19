@@ -223,6 +223,8 @@
       4. [Write] 다른 컴포넌트에서 'atom' 수정하기
          - 기본형 : const Setter함수 = useRecoilState(아톰명);
          - 'useState()'처럼 사용하면 됨
+- **23-09-20 : Fix: price chart**
+  - Fix: 'Price' 차트에서 색깔이 반전되어있는 현상 수정
 
 ---
 

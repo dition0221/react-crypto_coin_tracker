@@ -67,8 +67,8 @@ export default function Price() {
             plotOptions: {
               candlestick: {
                 colors: {
-                  upward: "#34e7e4",
-                  downward: "#f53b57",
+                  upward: "#f53b57",
+                  downward: "#34e7e4",
                 },
               },
             },
