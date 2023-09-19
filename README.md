@@ -18,7 +18,7 @@
 > - 우측 하단 Anchor 버튼을 통해 현재 페이지의 최상단으로 이동 가능.
 > - 자동으로 현재 페이지에 알맞는 웹 페이지 Head Title 사용.
 
-![image](https://github.com/dition0221/dition0221/assets/129196812/a151f240-6dc1-47b7-9eec-b83fab2f900c)
+![image](https://github.com/dition0221/react-crypto_coin_tracker/assets/129196812/20ea9e7c-e5da-4dc7-9418-b23a9a5f88df)
 
 > [ 상세페이지 ]  
 > 해당 코인의 상세 정보를 확인할 수 있습니다.  
